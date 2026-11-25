@@ -51,13 +51,37 @@ export default function Layout({ children }) {
 
       {!taking && (
         <Box component="footer" sx={{ borderTop: 1, borderColor: 'divider', py: 3, mt: 4 }}>
-          <Container maxWidth="md" sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, justifyContent: 'space-between' }}>
+          <Container
+            maxWidth="md"
+            sx={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 2,
+              justifyContent: 'space-between',
+              alignItems: 'center',
+            }}
+          >
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
               {APP_NAME}: no sign-up, free to use. Tests are deleted automatically when they expire.
             </Typography>
-            <Link component={RouterLink} to="/privacy" variant="body2">
-              Privacy
-            </Link>
+
+            <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
+              <Link component={RouterLink} to="/privacy" variant="body2">
+                Privacy
+              </Link>
+
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                 Built by{' '}
+                <Link
+                  href="https://www.linkedin.com/in/sritejamuthangi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  underline="hover"
+                >
+                  Sriteja Muthangi
+                </Link>
+              </Typography>
+            </Box>
           </Container>
         </Box>
       )}
