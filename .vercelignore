@@ -1,0 +1,15 @@
+# Never upload secrets or local-only files to Vercel.
+.env
+.env.*
+!.env.example
+.data/
+*.sqlite
+*.sqlite-journal
+dist/
+test-results/
+playwright-report/
+e2e/
+coverage/
+.vscode/
+.idea/
+*.log

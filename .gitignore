@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dev-dist/
+coverage/
+test-results/
+playwright-report/
+
+# Local database used by `npm run dev` when DATABASE_URL is empty
+.data/
+*.sqlite
+*.sqlite-journal
+
+# Secrets: never commit these
+.env
+.env.*
+!.env.example
+
+# Tooling
+.vercel/
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

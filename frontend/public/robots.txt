@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /$
+Allow: /create
+Allow: /privacy
+Disallow: /t/
+Disallow: /manage/
+Disallow: /api/
